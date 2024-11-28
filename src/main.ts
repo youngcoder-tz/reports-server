@@ -7,7 +7,11 @@ async function bootstrap() {
 
   // Enable CORS
   app.enableCors({
-    origin: 'https://reports.utpc.or.tz', // Allow only your frontend origin
+    origin: [
+      'http://reports.utpc.or.tz',
+      'https://reports.utpc.or.tz',
+      'http://localhost:5173',
+    ],
     credentials: true, // Allow cookies or authentication headers
   });
 
@@ -25,4 +29,3 @@ async function bootstrap() {
   await app.listen(3000);
 }
 bootstrap();
-
