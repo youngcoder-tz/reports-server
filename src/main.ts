@@ -7,7 +7,7 @@ async function bootstrap() {
 
   // Enable CORS
   app.enableCors({
-    origin: 'http://reports.utpc.or.tz', // Allow only your frontend origin
+    origin: 'https://reports.utpc.or.tz', // Allow only your frontend origin
     credentials: true, // Allow cookies or authentication headers
   });
 
